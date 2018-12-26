@@ -1,0 +1,13 @@
+<div class="grid-x grid-padding-x">
+  <div class="large-12 cell">
+    <h3>Список слов на заданную букву</h3>
+  </div>
+</div>
+
+<div class="grid-x grid-padding-x">
+    <% @en_words_by_letter.each do |word| %>
+        <div class="large-9 cell">
+            <%= word %>
+        </div>
+    <% end %>
+</div>
