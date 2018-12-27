@@ -10,14 +10,18 @@
       <label>Введите слово или фразу для перевода
         <input type="text" placeholder="hi" name="en_word_or_phrase">
       </label>
-    </div>    
-  </div>  
-</form>
-
-<div class="grid-x grid-padding-x">
-  <div class="large-12 cell">
-    <a href="/word/en" class="button">Перевести слово</a>
-    <a href="/letter/en" class="button">Список слов на заданную букву</a>
-    <a href="/phrase/en" class="button">Перевести фразу</a>
+      <select name="select">
+        <option value="/word/en">
+          Перевести слово
+        </option>
+        <option value="/letter/en">
+          Список слов на заданную букву
+        </option>
+        <option value="/phrase/en">
+          Перевести фразу
+        </option>
+      </select>
+      <input type="submit" value="Выбрать" class="button">
+    </div>
   </div>
-</div>
+</form>

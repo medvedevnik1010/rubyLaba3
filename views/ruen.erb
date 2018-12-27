@@ -8,17 +8,20 @@
   <div class="grid-x grid-padding-x">
     <div class="medium-12 cell">
       <label>Введите слово или фразу для перевода
-        <input type="text" placeholder="привет" name="ru_word_or_phrase">
+        <input type="text" placeholder="hi" name="ru_word_or_phrase">
       </label>
-    </div>    
-  </div>  
-</form>
-
-<div class="grid-x grid-padding-x">
-  <div class="large-12 cell">
-    <a href="/word/ru" class="button">Перевести слово</a>
-    <a href="/letter/ru" class="button">Список слов на заданную букву</a>
-    <a href="/phrase/ru" class="button">Перевести фразу</a>
+      <select name="ru_select">
+        <option value="/word/ru">
+          Перевести слово
+        </option>
+        <option value="/letter/ru">
+          Список слов на заданную букву
+        </option>
+        <option value="/phrase/ru">
+          Перевести фразу
+        </option>
+      </select>
+      <input type="submit" value="Выбрать" class="button">
+    </div>
   </div>
-</div>
-   
+</form>

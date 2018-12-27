@@ -54,6 +54,7 @@ class Translations
 
   def print_translation_with_synonyms(word)
     flag = false
+    result = ''
     @translations.each do |value|
       next unless word.downcase == value.word
       
@@ -87,7 +88,7 @@ class Translations
     words.each do |word|
       flag = false
       @translations.each do |translation|
-        if word.downcase == translation.word
+        if word.mb_chars.downcase == translation.word
           result = result + translation.translation + ' '
           flag = true
         end

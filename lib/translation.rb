@@ -5,9 +5,9 @@ require 'active_support/all'
 class Translation
   attr_reader :word, :translation, :synonyms
   def initialize(word, translation, synonyms)
-    @word = word
-    @translation = translation
-    @synonyms = synonyms
+    @word = word.mb_chars
+    @translation = translation.mb_chars
+    @synonyms = synonyms.mb_chars
   end
 
   def to_s
